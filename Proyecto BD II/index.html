@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Sitio de Apuestas</title>
+  <meta name="description" content="Sitio de Apuestas">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    
+
+
+
+    <header id="header">
+        <div class="container">
+            <nav id=" nav-bar">
+                <ul class="nav-link">
+                    <li><a href="#inicio" class="selected">Inicio</a></li>
+                    <li><a href="apuestas.html">Apuestas</a></li>
+                    <li><a href="partidos.html" class="nav-link">Partidos Recientes</a></li>
+                    <li><button type="button" class="open-modal" data-open="modal1"><img src="img/user-male-circle--v1.png"/> Entrar</button >  </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+
+    <section class="main-section"> 
+        <div class="banner">
+            
+            <div id="dashboard">
+                <div class="partidos-destacados">
+                    <h3>Partidos Destacados </h3> 
+                    
+                    <div class="partido">
+                    </div>
+                    <div class="partido">
+                    </div>
+                    <div class="partido">
+                    </div>
+                    <div class="partido">
+                </div>
+                </div>
+                 </div>
+            </div>
+
+            <div class="torneos_destacados">
+                <div class="torneos_destacados_text">
+                <h3>Torneos Destacados</h3>
+                </div>  
+                <div class="fila_torneos">
+                <div class="lista_torneos"> 
+                    <button id="verpartidos">Ver partidos</button>  
+                </div>
+                <div class="lista_torneos">  
+                    <button id="verpartidos">Ver partidos</button>  
+                </div>
+                <div class="lista_torneos">  
+                    <button id="verpartidos">Ver partidos</button>  
+                </div>
+          
+            </div>
+            <div class="vermas">
+                    <h3>Ver Todos los Partidos</h3>
+            </div>
+            </div>
+    </section>
+
+    <div class="modal" id="modal1" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <h4>Registrar Usuario</h4>
+                <button class="close-modal" aria-label="close modal" data-close>
+                    ✕  
+                </button>
+            </header>
+            <section class="modal-content">
+               <div class=field-wrap>
+                   <div class="field-wrap-email">
+                    <input type="email" id="email" placeholder="Correo Electronico*" required>
+                   </div>
+                   <div class="field-wrap">
+                    <input type="text" id="username" placeholder="Nombre de Usuario*" required>
+                </div>
+                <div class="field-wrap">
+                    <input type="text" id="password" placeholder="Contraseña*" required>
+                </div>
+                <div class="field-wrap">
+                    <input type="text" id="repassword" placeholder="Confirmar Contraseña*" required>
+                </div>
+                <button id="ingresar">Crear Cuenta</button>
+               
+               </div>
+            </section>
+            <footer class="modal-footer">
+                <h3> Ya tienes cuenta? <a style="color: #6fcf97; cursor: pointer" data-open="modal2" data-close > Iniciar sesion 🠖</a></h3>
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2" data-animation="slideInOutRight">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <h4>Iniciar Sesion</h4>
+                <button class="close-modal" aria-label="close modal" data-close>
+                    ✕  
+                </button>
+            </header>
+            <section class="modal-content">
+               <div class=field-wrap>
+                   <div class="field-wrap-email">
+                    
+                    <input type="text" id="username" placeholder="Nombre de Usuario*" required>
+                </div>
+                <div class="field-wrap">
+                    <input type="text" id="password" placeholder="Contraseña*" required>
+                </div>
+                
+                <button id="ingresar">Ingresar</button>
+               
+               </div>
+            </section>
+            <footer class="modal-footer">
+                
+            </footer>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="rectangulofooter">
+        </div>
+    </footer>
+    
+
+    <script src="/js/scripts.js"></script>
+
+</body>
+
+</html>
