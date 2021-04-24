@@ -7,220 +7,170 @@
     font-family: 'Montserrat', sans-serif;
   }
 
-
+  .container{
+    width: 80%;
+    margin: 0 auto;
+}
 /** Barra de Navegacion**/
 
-.container{
-  width: 80%;
-  margin: 0 auto;
-}
-@media screen and (max-width: 767px) {
-  #header{
-    width: 40%;
-  }
- 
-}
-
 #header{
-  width: 110%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 80px;
-  padding: 0 24px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  background-color: #f0f0f0;
-  box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.05);
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    padding: 0 24px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: #f0f0f0;
+    box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.05);
 }
 #header::after{
-  content:'';
-  display: table;
-  clear: both;
-}
+    content:'';
+    display: table;
+    clear: both;
+  }
 
-nav ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li{
-  display: inline-block;
-  margin-left: 30px;
-  padding-top: 10px;
-  position: relative;
-}
-
-nav a{
-  width: 70px;
-  height: 18px;
-  margin: 11px 20px 11px 0px;
-  margin-bottom: 11px;
-  font-family: Montserrat;
-  font-size: 20px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.23px;
-  text-align: center;
-  color: #28292b;
-  text-decoration: none;
-}
-
-nav a:hover{
-  color: #6fcf97;
-}
-
-.selected{
-  padding-bottom: .7rem;
- border-bottom: 3px solid #6fcf97;
-}
-
-nav li button{
-  background-color: #6fcf97;
-  border: 0;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0,2);
-  color: #ffffff;
-  padding: 10px 25px;
-  font-size: 20px;
-  margin-left: 27rem;
+  nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
   
-
-}
-
-nav li button:hover {
-  cursor: pointer;
-}
-/** FIN BARRA DE NAVEGACION*/
-
-
-
-/** Banner */
-.banner{
-    width: 938px;
-    height: 441px;
-    margin: 100px 416px 11px 186px;
-    border-radius: 13px;
-    box-shadow: inset 0 4px 11px 35px rgba(0, 0, 0, 0.25);
-    background: url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-    background-position: center;
-    background-size: cover;
-}
-
-/** Barra de partidos destacados **/
-#dashboard{
-    width: 334px;
-    height: 662px;
-    margin: 11px 95px 30px 900px;
-    padding: 25px 3px 84px 0;
-    box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, 0.25);
-    background-color: #e8e8e8;
-    display: flex;
+  nav li{
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 10px;
     position: relative;
-}
-h3{
-    font-family: 'Montserrat', sans-serif;
-}
+  }
 
-.partidos-destacados h3 {
-    width: 155px;
-    height: 16px;
-    margin: 0px 0px 0px 5px;
+  nav a{
+    width: 70px;
+    height: 18px;
+    margin: 11px 20px 11px 0px;
+    margin-bottom: 11px;
     font-family: Montserrat;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: -0.23px;
     text-align: center;
+    color: #28292b;
+    text-decoration: none;
+  }
+  nav a:hover{
+    color:#6fcf97;
+  }
+  .selected{
+    padding-bottom: .7rem;
+   border-bottom: 3px solid #6fcf97;
+  }
+
+  /** Boton ENTRAR*/ 
+
+  nav li button{
+    background-color: #6fcf97;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0,2);
+    color: #ffffff;
+    padding: 10px 25px;
+    font-size: 20px;
+    margin-left: 27rem;
+    
+
+  }
+
+  nav li button:hover {
+    cursor: pointer;
+  }
+
+/**FIN BOTON ENTRAR*/
+/**FIN HEADER*/
+
+/** PARTIDOS */
+.tabla-partidos{
+    border-color: #28292b;
+    color:  #28292b;
+    font-size: 14px;
+    gap: normal;
+    line-height: 20px;
+    padding: 20px 0px 40px;
+    text-align: left;
+    margin-top: 79px;
+}
+
+.container{
+    border-color: #28292b;
+    color:  #28292b;
+    font-size: 14px;
+    gap: normal;
+    line-height: 20px;
+    padding: 0px 8px;
+    text-align: left;
+}
+
+.section-header{
+    align-items: center;
+    border-color: #28292b;
+    color:  #28292b;
+    display: flex;
+    font-size: 14px;
+    gap: normal;
+    justify-content: flex-start;
+    line-height: 20px;
+    margin: 0px 0px 24px;
+    text-align: left;
+}
+.section-header h2{
+    border-color: #28292b;
+    color: #6fcf97;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 800;
+    gap: normal;
+    letter-spacing: 0.17px;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 2rem;
+}
+.partidos{
+  height: 777px;
+  margin: 0;
+  padding: 22px 55px 79px;
+  background-color: #f9f7f7;
+}
+
+.exodus{
+  align-items: center;
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  gap: normal;
+  line-height: 16px;
+  text-align: center;
+  font-family: Montserrat;
+}
+.exodus h3{
+  margin-left: 7rem;
+  margin-right: 17rem;
 }
 
 .partido{
-  width: 320px;
-  height: 95px;
-  margin: 50px 25px 20px 10px;
-  padding: 0 0 6px;
-  border-radius: 9px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background-color: #fefefe;
+  width: 1068px;
+  height: 50px;
+  margin: 25px 0 32px;
+  padding: 15px 25px 21px 49px;
+  border-radius: 5px;
+  border: solid 1px rgba(0, 0, 0, 0.11);
+  background-color: #fffefe;
 }
 
-/**  Fin Partidos Destacados*/
-
-/** Seccion Torneos destacados**/
-
-.torneos_destacados_text h3{
-    margin-left: 12rem;
-}
-.fila_torneos{
-    display:flex;
-    align-items: center;
-    
-}
-.lista_torneos{
-  width: 207px;
-  height: 164px;
-  padding: 13px 22px 11px 23px;
-  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
-  background-color: #f5f5f5;
-  margin-left: 11.5rem;
-  margin-right: -9rem;
-}
-
-#verpartidos{
-    width: 180px;
-    height: 32px;
-    margin-top: 8.5rem;
-    margin-left: .7rem;
-    padding: 2px 36px 2px 34px;
-    border-radius: 6px;
-    border-color: #6fcf97 ;
-    background-color: #6fcf97;
-    font-family: Montserrat;
-    color: white;
-}
-#verpartidos:hover{
-    cursor: pointer;
-}
-
-.vermas{
-  margin-top: 2.5rem;
-  margin-left: 11rem;
-  width: 838px;
-  height: 65px;
-  padding: 2px;
-  border-radius: 25px;
-  background-color: #eeecec;
-  cursor: pointer;
-}
-
-.vermas h3{
-  display: flex;
-  align-items: center;
-  justify-content:  center;
-}
-
-
-.rectangulofooter{
-  width: 400px;
-  height: 60px;
-  margin: 111px 0 0;
-  padding: 21px 1001px 21px 187px;
-  background-color: #323131;
-
-}
-
-
-
-/** Fin Torneos Destacados*/
-
-/** MODAL */
+/** Modal*/
 .modal {
   font-family: Montserrat;
   position: fixed;
@@ -300,6 +250,7 @@ h3{
   color: white;
   font-family: Montserrat;
   font-size: 18px;
+  left: 0;
 }
 .modal-content{
   align-items: center;
@@ -411,7 +362,4 @@ h3{
     transform: rotate(0deg);
   }
 }
-
-
-/** Fin Modal*/
 
