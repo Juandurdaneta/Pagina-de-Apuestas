@@ -170,6 +170,16 @@
   background-color: #fffefe;
 }
 
+footer{
+  background-color: #323131;
+  margin-top: 100px;
+  height: 80px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
 /** Modal*/
 .modal {
   font-family: Montserrat;

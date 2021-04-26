@@ -119,7 +119,7 @@ nav li button:hover {
     margin: 11px 95px 30px 900px;
     padding: 25px 3px 84px 0;
     box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, 0.25);
-    background-color: #e8e8e8;
+    background-color: #f0f0f0;
     display: flex;
     position: relative;
 }
@@ -213,7 +213,15 @@ h3{
   margin: 111px 0 0;
   padding: 21px 1001px 21px 187px;
   background-color: #323131;
+}
 
+footer{
+  background-color: #323131;
+  margin-top: 100px;
+  height: 80px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 
