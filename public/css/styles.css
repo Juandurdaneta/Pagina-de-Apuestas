@@ -308,6 +308,13 @@ h3{
 }
 
 
+
+#modal2 .modal-dialog {
+  height: 50vh;
+  
+}
+
+
 .modal p + p {
   margin-top: 1rem;
 }

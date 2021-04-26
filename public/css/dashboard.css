@@ -118,6 +118,13 @@ label{
     text-align: center;
     padding: 30px 40px;
   }
+
+  
+#modal2 .modal-dialog {
+  height: 50vh;
+  
+}
+
   
   .field-wrap input{
     font-family: Montserrat;

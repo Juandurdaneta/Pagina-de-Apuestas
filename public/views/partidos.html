@@ -19,9 +19,9 @@
     <div class="container">
         <nav id=" nav-bar">
             <ul class="nav-link">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="/public/index.html">Inicio</a></li>
                 <li><a href="apuestas.html">Apuestas</a></li>
-                <li><a href="partidos.html" class="selected">Partidos Recientes</a></li>
+                <li><a href="views/partidos.html" class="selected">Partidos Recientes</a></li>
                 <li><button type="button" class="open-modal" data-open="modal1"><img src="img/user-male-circle--v1.png"/> Entrar</button >  </li>
             </ul>
         </nav>
@@ -32,6 +32,11 @@
     <div class="container">
         <div class="section-header">
             <h2>Partidos</h2>
+            <div class="barra_buscar">
+                <button type="submit"><i class="fa fa-search">Buscar</i></button>
+                <input type="text" placeholder="Buscar Equipo..." name="buscar">
+                
+            </div>
         </div>
         <div class="partidos">
             <div class="exodus"><h3>Liga</h3><h3>Partido</h3><h3>Horario</h3></div> 
@@ -42,7 +47,11 @@
             <div class="partido"><div class="exodus"><h3 name="torneo"></h3><h3 name="partido"></h3><h3 name="horario"></h3></div></div>
             <div class="partido"><div class="exodus"><h3 name="torneo"></h3><h3 name="partido"></h3><h3 name="horario"></h3></div></div>
         </div>
+        <div class="nav_partidos">
+            <a href="#" class ="previous round">&#8249; Atras</a> <a href="#" class="next round"> Siguiente &#8250; </a>
+        </div>
     </div>
+    
 </section>
 
 

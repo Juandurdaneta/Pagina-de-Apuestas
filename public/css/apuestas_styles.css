@@ -129,6 +129,13 @@
   cursor: default;
 }
 
+
+#modal2 .modal-dialog {
+  height: 50vh;
+  
+}
+
+
 .modal-dialog > * {
   padding: 1rem;
 }

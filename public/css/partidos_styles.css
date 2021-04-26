@@ -214,6 +214,13 @@
   padding: 1rem;
 }
 
+
+#modal2 .modal-dialog {
+  height: 50vh;
+  
+}
+
+
 .modal-header {
   display: flex;
   align-items: center;
@@ -368,3 +375,59 @@
   }
 }
 
+/** Barra Buscador*/ 
+.barra_buscar{
+  float: right;
+  margin-left: 50rem;
+}
+.barra_buscar input{
+  float: right;
+  padding: 6px;
+  border: solid 1px #ddd;
+  margin-top: 8px;
+  margin-right: 0px;
+  font-size: 17px;
+
+}
+
+.barra_buscar button{
+  float: right;
+  padding: 7.5px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #28292b;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  align-items: flex-end;
+}
+
+
+/** Navegacion partidos*/
+.nav_partidos{
+  margin-left: 3.5rem;
+  margin-top: .8rem;
+}
+.nav_partidos a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 18px;
+  font-family: Montserrat;
+}
+.nav_partidos .previous {
+  background-color: #28292b;
+  color: #f0f0f0;
+  
+}
+.nav_partidos .round{
+  border-radius: 2%;
+}
+
+.nav_partidos .next {
+  background-color: #28292b;
+  color: #f0f0f0;
+  margin-left: 57.5rem;
+  
+}
