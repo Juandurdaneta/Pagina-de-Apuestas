@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.body {
+    background-color: #ffffff;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/** Barra de Navegacion**/
+
+header{
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    padding: 0 24px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: #f0f0f0;
+    box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.05);
+}
+header::after{
+    content:'';
+    display: table;
+    clear: both;
+  }
+
+  nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li{
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 10px;
+    position: relative;
+  }
+
+  nav a{
+    width: 70px;
+    height: 18px;
+    margin: 11px 20px 11px 0px;
+    margin-bottom: 11px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.23px;
+    text-align: center;
+    color: #6fcf97;
+    text-decoration: none;
+  }
+  
+  .selected{
+    padding-bottom: .7rem;
+   border-bottom: 3px solid #6fcf97;
+  }
+
+   /** Boton ENTRAR*/ 
+
+   nav li button{
+    background-color: #6fcf97;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0,2);
+    color: #ffffff;
+    padding: 10px 25px;
+    font-size: 20px;
+    margin-left: 27rem;
+    
+
+  }
+
+  nav li button:hover {
+    cursor: pointer;
+  }
+
+/**FIN BOTON ENTRAR*/
+
+/** FIN BARRA DE NAVEGACION*/
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+label{
+    font-family: 'Montserrat', sans-serif;
+}
+.modal-container{
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 110vw;
+    width: 100vw;
+    font-family: Montserrat;
+  }
+
+.modal{
+    background-color: #ffffff;
+    width: 938px;
+    height: 441px;
+    margin: 100px 416px 11px 186px;
+    border-radius: 13px;
+    text-align: center;
+    padding: 30px 40px;
+  }
+  
+  .field-wrap input{
+    font-family: Montserrat;
+    width: 278px;
+    height: 48px;
+    margin-bottom: .5rem;
+    
+    
+  }
+  
+  .field-wrap-email input{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-width: .2px;
+  }
+  
+  .modal-container button{
+    width: 285px;
+    height: 48px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-width: .2px;
+    background-color: #6fcf97;
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+  }
+  .color{
+   color: #6fcf97;
+  }
+  
+  .modal-container img{
+    margin-left: 35rem;
+  }
+
+  .Perfil{
+    background-color: rgba(29, 7, 155, 0.3);
+    width: 800px;
+    height: 480px;
+    margin: 100px 416px 2px 10px;
+    border-radius: 13px;
+    text-align: center;
+    padding: 30px 40px;
+  }
+  
+  .Producto{
+    background-color: rgba(7, 148, 66, 0.3);
+    width: 600px;
+    height: 480px;
+    margin: -545px 41px 10px 930px;
+    border-radius: 13px;
+    text-align: center;
+    padding: 30px 40px;
+  }
+
+  .rectangulofooter{
+    width: 400px;
+    height: 60px;
+    margin: 111px 0 0;
+    padding: 21px 1001px 21px 187px;
+    background-color: #323131;
+  
+  }

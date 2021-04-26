@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Sitio de Apuestas</title>
+        <meta name="description" content="Mercado">
+        <meta name="author" content="SitePoint">
+      
+        <link rel="stylesheet" href="/css/dashboard.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <nav id=" nav-bar">
+                    <ul class="nav-link">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="apuestas.html">Apuestas</a></li>
+                        <li><a href="partidos.html">Partidos Recientes</a></li>
+                        <li><button id="Perfil" ><img src="img/user-male-circle--v1.png"/> Perfil</button >  </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="Perfil">
+            <h1>Datos del Usuario</h1>
+            <form id="Dashboard">
+                <div class="field-wrap">
+                    <label for="email">Su correo:</label>
+                    <br>
+                    <input type="email" id="correo" name="correo" placeholder="correo" minlength="1" maxlength="50" readonly>
+                </div>
+                <br>
+                <div class="field-wrap">
+                    <label for="nombre">su nombre (o alias):</label> 
+                    <br>
+                    <input type="text" id="username" name="username" placeholder="nombre" minlength="1" maxlength="30" >
+                </div>
+                <br>
+                <div class="field-wrap">
+                    <label for="EDAD">Su edad:</label>
+                    <br>
+                    <input type="number" id="EDAD" name="EDAD" placeholder="EDAD"  min="12" max="99">
+                </div>
+                <br>
+                <div class="field-wrap">
+                    <label for="pass">Su contraseña:</label>
+                    <br>
+                    <input type="password" id="pass"  name="pass" placeholder="contraseña" minlength="6" maxlength="16">
+                </div>
+                <div class="field-wrap">
+                    <label for="nacionalidad">Su nacionalidad:</label>
+                    <br>
+                    <input type="text" id="nacionalidad"  name="nacionalidad" placeholder="nacionalidad" minlength="2" maxlength="30">
+                </div>
+                <div class="field-wrap">
+                    <label for="total_apostado">Total apostado:</label>
+                    <br>
+                    <input type="text" id="total_apostado"  name="total_apostado" placeholder="El dinero que ha apostado" >
+                </div>
+                <div class="field-wrap">
+                    <label for="total_ganado">Total apostado:</label>
+                    <br>
+                    <input type="text" id="total_ganado"  name="total_ganado" placeholder="El dinero que ha total_ganado" >
+                </div>
+                <button id="boton" name="boton" type="submit">enviar</button>
+            </form>
+        </div>
+
+        <footer>
+            <div class="rectangulofooter">
+            </div>
+        </footer>
+        <script src="../js/dashboard_traer.js"></script>
+        <script src="../js/Dashboard_editar.js"></script>
+    </body>
+</html>

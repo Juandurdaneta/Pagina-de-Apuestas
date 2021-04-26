@@ -1,0 +1,11 @@
+Para probar la aplicacion primero debes de realizar lo siguiente:
+
+1.- npm install 
+
+eso descargara todas las dependencias
+
+2.- nodemon app.js
+
+o
+
+2.- node app.js
