@@ -1,7 +1,6 @@
 const express = require('express')
 const path= require('path')
 require('./BD/conecction')
-const usuario= require('./modelos/usuarios')
 const multer  = require('multer')
 const upload = multer()
 const session= require('express-session')
@@ -9,6 +8,7 @@ const session= require('express-session')
 const app = express();
 
 //modelos
+const usuario= require('./modelos/usuarios')
 const Paises= require('./Modelos/Paises')
 const equipos= require('./Modelos/Equipos')
 const Jugadores = require('./Modelos/Jugadores');
@@ -110,8 +110,17 @@ app.get('/Partidos', (req,res)=>{
     res.sendFile('./public/views/partidos.html', { root: __dirname })
 })
 
-app.get('/Partidos_pedir',async (req,res)=>{
-    const cursor =await Partidos.paginate({}, {_id:0, limit:7})//paginacion
+app.get('/Partidos_pedir',upload.none(),async (req,res)=>{
+    console.log(req.body.pagina)
+    var pag= req.body.pagina || 1;
+    var dateObj = new Date();
+    var month = dateObj.getUTCMonth() + 1; //months from 1-12
+    var day = dateObj.getUTCDate();
+    var year = dateObj.getUTCFullYear();
+
+    var fecha=year + "-" +"0"+ month + "-" + day;
+    //paginacion
+    const cursor =await Partidos.paginate({hora_inicio:{$regex:fecha}}, {_id:0, limit:7, page:pag})
     var round=new Array();
     var torneo=new Array();
     var local=new Array();
@@ -126,7 +135,7 @@ app.get('/Partidos_pedir',async (req,res)=>{
         hora_inicio[i]=cursor.docs[i].hora_inicio
     }
     res.send({"status":200,"torneo":torneo,"local":local,"visitante":visitante,
-            "tipo":round,"horario":hora_inicio, "hasPrevPage":cursor.hasPrevPage,"hasNextPage":cursor.hasNextPage})
+            "tipo":round,"horario":hora_inicio, "hasPrevPage":cursor.hasPrevPage,"hasNextPage":cursor.hasNextPage, "page":cursor.page})
     // console.log(cursor);
     // console.log(round)
     // res.send(cursor)

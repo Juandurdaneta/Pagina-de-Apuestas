@@ -19,9 +19,9 @@
     <div class="container">
         <nav id=" nav-bar">
             <ul class="nav-link">
-                <li><a href="/public/index.html">Inicio</a></li>
-                <li><a href="apuestas.html">Apuestas</a></li>
-                <li><a href="views/partidos.html" class="selected">Partidos Recientes</a></li>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="./apuestas.html">Apuestas</a></li>
+                <li><a href="/partidos" class="selected">Partidos Recientes</a></li>
                 <li><button type="button" class="open-modal" data-open="modal1"><img src="img/user-male-circle--v1.png"/> Entrar</button >  </li>
             </ul>
         </nav>
@@ -48,11 +48,17 @@
             <div class="partido"><div class="exodus"><h3 name="torneo"></h3><h3 name="partido"></h3><h3 name="horario"></h3></div></div>
         </div>
         <div class="nav_partidos">
-            <a href="#" class ="previous round">&#8249; Atras</a> <a href="#" class="next round"> Siguiente &#8250; </a>
+            <form id="retroceder">
+                <button type="submit" class ="previous round" >&#8249; Atras</button> 
+            </form>
+            <form id="avanzar">
+                <button type="submit" class="next round" > Siguiente &#8250; </button>
+            </form>        
         </div>
     </div>
     
 </section>
+
 
 
 <div class="modal" id="modal1" data-animation="slideInOutLeft">
@@ -98,16 +104,21 @@
         </header>
         <section class="modal-content">
         <div class=field-wrap>
-            <form id="Login">
+            <form id="Login" action="/login" method="POST">
                     <div class="field-wrap-email">
-                        <input type="text" id="username" placeholder="Nombre de Usuario*" required>
+                        <input type="email" id="email" name="email" placeholder="Correo*" required>
                     </div>
                     <div class="field-wrap">
-                        <input type="text" id="password" placeholder="Contraseña*" required>
+                        <input type="text" id="password" name="password" placeholder="Contraseña*" required>
                     </div>
                     <button type="submit" id="enviar">Ingresar</button>
             </form>
         </div>
+        </section>
+        
+    </div>
+</div>
+
         </section>
         <footer class="modal-footer">
             
